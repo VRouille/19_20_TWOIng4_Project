@@ -3,9 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
+    "@trendmicro/react-sidenav": "^0.4.5",
+    "clsx": "^1.0.4",
+    "mdbreact": "^4.22.1",
+    "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-focus-lock": "^2.2.1",
+    "react-native": "^0.61.5",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "simple-flexbox": "^2.3.0",
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
