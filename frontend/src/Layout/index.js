@@ -1,9 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-import person from './person.png';
 import {
   makeStyles, useTheme, Drawer, AppBar, Toolbar,
-  List, CssBaseline, Typography, Divider, IconButton,
+  List, CssBaseline, Typography, IconButton,
   ListItem, ListItemIcon, ListItemText,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -83,10 +82,9 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
-  profil:{
+  dash:{
     fontFamily :'montserrat',
     fontWeight : '600px',
-    paddingLeft : '70%',
   },
   person:{
     height:'40px',
@@ -135,10 +133,9 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.profil} variant="h6" noWrap>
-            Bonjour Clément
+          <Typography className={classes.dash} variant="h6" noWrap>
+            Dashboard
           </Typography>
-          <img className={classes.person} src={person} alt="person"></img>
         </Toolbar>
       </AppBar>
       <Drawer
