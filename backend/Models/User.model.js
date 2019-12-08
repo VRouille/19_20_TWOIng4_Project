@@ -2,13 +2,13 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema(
     {
-        _id:[{type : mongoose.Schema.Types.ObjectId}],
+        _id: Number,
         localisation:{
             type: String,
             required: true
         },
         personInHouse : Number,
-        houseSize: Number,
+        houseSize: String,
     }
 );
 

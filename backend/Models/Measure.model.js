@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 
 const measureSchema = new mongoose.Schema(
     {
-        _id:[{type : mongoose.Schema.Types.ObjectId}],
+        _id:Number,
         type: String,
         creationDate:Date,
-        sensorID:[{type : mongoose.Schema.Types.ObjectId}],
+        sensorID:Number,
         value: Number,
     }
 );
