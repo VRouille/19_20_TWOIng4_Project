@@ -15,6 +15,7 @@ import Doughnut from "./Widgets/Doughnut";
 import Bar_Chart from "./Widgets/Bar_Chart";
 import LineGraph from "./Widgets/LineGraph";
 import Test from "./Widgets/Test";
+import TableOrder from "./Widgets/TableOrder";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -42,12 +43,16 @@ const useStyles = makeStyles(theme => ({
   fixedHeightGraph: {
     height: 335,
   },
+  fixedHeightTable: {
+    height: 290,
+  },
 }));
 
 function App() {
   const classes = useStyles();
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
   const fixedHeightPaperGraph = clsx(classes.paper, classes.fixedHeightGraph);
+  const fixedHeightPaperTable = clsx(classes.paper, classes.fixedHeightTable);
   return (
     <div className={classes.root}>
       <Layout/>
@@ -83,6 +88,12 @@ function App() {
             <Grid item xs={12} >
               <Paper className={fixedHeightPaperGraph}>
                 <Bar_Chart />
+              </Paper>
+            </Grid>
+            {/* Table Order */}
+            <Grid item xs={12} >
+              <Paper className={fixedHeightPaperTable}>
+                <TableOrder />
               </Paper>
             </Grid>
           </Grid>  
