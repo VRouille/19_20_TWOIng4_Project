@@ -14,8 +14,8 @@ import AverageAirPollution from './Widgets/AverageAirPollution';
 import Doughnut from "./Widgets/Doughnut";
 import Bar_Chart from "./Widgets/Bar_Chart";
 import LineGraph from "./Widgets/LineGraph";
-import Test from "./Widgets/Test";
 import TableOrder from "./Widgets/TableOrder";
+import PolarChart from "./Widgets/PolarChart";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -46,6 +46,9 @@ const useStyles = makeStyles(theme => ({
   fixedHeightTable: {
     height: 290,
   },
+  fixedHeightPolar: {
+    height: 300,
+  },
 }));
 
 function App() {
@@ -53,6 +56,8 @@ function App() {
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
   const fixedHeightPaperGraph = clsx(classes.paper, classes.fixedHeightGraph);
   const fixedHeightPaperTable = clsx(classes.paper, classes.fixedHeightTable);
+  const fixedHeightPaperPolar = clsx(classes.paper, classes.fixedHeightPolar);
+
   return (
     <div className={classes.root}>
       <Layout/>
@@ -97,9 +102,15 @@ function App() {
               </Paper>
             </Grid>
             {/* Doughnut */}
-            <Grid item xs={6} md={6} lg={6} >
-              <Paper className={fixedHeightPaperTable}>
+            <Grid item xs={12} md={6} lg={6} >
+              <Paper className={fixedHeightPaperPolar}>
                 <Doughnut />
+              </Paper>
+            </Grid>
+            {/* Polar Chart */}
+            <Grid item xs={12} md={6} lg={6}>
+              <Paper className={fixedHeightPaperPolar}>
+                <PolarChart />
               </Paper>
             </Grid>
           </Grid>  

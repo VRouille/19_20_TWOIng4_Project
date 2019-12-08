@@ -71,7 +71,7 @@ export default class Doughnut extends PureComponent {
 
   render() {
     return (
-        <div style={{ width: '100%', height: 300, margin : 0}}>
+        <div style={{ width: '100%', height: 230, margin : 0}}>
             <React.Fragment>
               <Title>Today</Title>
               <ResponsiveContainer>
@@ -80,8 +80,7 @@ export default class Doughnut extends PureComponent {
                       activeIndex={this.state.activeIndex}
                       activeShape={renderActiveShape}
                       data={data}
-                      cx={220}
-                      cy={100}
+                      align="center"
                       innerRadius={60}
                       outerRadius={65}
                       fill="#2C75FF"
