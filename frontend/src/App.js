@@ -96,6 +96,12 @@ function App() {
                 <TableOrder />
               </Paper>
             </Grid>
+            {/* Doughnut */}
+            <Grid item xs={6} md={6} lg={6} >
+              <Paper className={fixedHeightPaperTable}>
+                <Doughnut />
+              </Paper>
+            </Grid>
           </Grid>  
         </Container>
       </main>

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { ResponsiveContainer, PieChart, Pie, Sector } from 'recharts';
+import Title from './Title';
 
 const data = [
   { name: 'Humidity', value: 400 },
@@ -71,22 +72,25 @@ export default class Doughnut extends PureComponent {
   render() {
     return (
         <div style={{ width: '100%', height: 300, margin : 0}}>
-            <ResponsiveContainer>
-                <PieChart>
-                    <Pie
-                    activeIndex={this.state.activeIndex}
-                    activeShape={renderActiveShape}
-                    data={data}
-                    cx={220}
-                    cy={100}
-                    innerRadius={60}
-                    outerRadius={65}
-                    fill="#2C75FF"
-                    dataKey="value"
-                    onMouseEnter={this.onPieEnter}
-                    />
-                </PieChart>
-            </ResponsiveContainer>
+            <React.Fragment>
+              <Title>Today</Title>
+              <ResponsiveContainer>
+                  <PieChart>
+                      <Pie
+                      activeIndex={this.state.activeIndex}
+                      activeShape={renderActiveShape}
+                      data={data}
+                      cx={220}
+                      cy={100}
+                      innerRadius={60}
+                      outerRadius={65}
+                      fill="#2C75FF"
+                      dataKey="value"
+                      onMouseEnter={this.onPieEnter}
+                      />
+                  </PieChart>
+              </ResponsiveContainer>
+            </React.Fragment>
         </div>
     );
   }

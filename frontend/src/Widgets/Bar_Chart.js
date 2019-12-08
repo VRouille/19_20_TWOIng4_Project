@@ -33,21 +33,24 @@ export default class Bar_Chart extends PureComponent {
 
   render() {
     return (
-      <ResponsiveContainer>
-        <BarChart
-          data={data}
-          margin={{
-            top: 16, right: 16, left: 24, bottom: 0,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="pv" fill="#2C75FF" />
-        </BarChart>
-      </ResponsiveContainer>
+      <React.Fragment>
+        <Title>Today</Title>
+        <ResponsiveContainer>
+          <BarChart
+            data={data}
+            margin={{
+              top: 16, right: 16, left: 24, bottom: 0,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="pv" fill="#2C75FF" />
+          </BarChart>
+        </ResponsiveContainer>
+      </React.Fragment>
     );
   }
 }
