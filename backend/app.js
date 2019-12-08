@@ -5,6 +5,9 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var measureRouter = require("./routes/Measure");
+var sensorRouter = require("./routes/Sensor");
+var userRouter = require("./routes/User");
 
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/DashboardProject');
@@ -23,5 +26,8 @@ app.use(cookieParser());
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/measure", measureRouter);
+app.use("/sensor", sensorRouter);
+app.use("/user", userRouter);
 
 module.exports = app;
