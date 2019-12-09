@@ -14,10 +14,10 @@ export default function AverageAirPollution() {
     return (
       <React.Fragment>
         <Title>
-            Average Air Pollution 
+            Average Air Pollution Index
         </Title>
         <Typography className={classes.mid} component="p" variant="h4" align="center">
-            $3,024.00
+          37
         </Typography>
       </React.Fragment>
     );
