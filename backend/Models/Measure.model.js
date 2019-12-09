@@ -2,11 +2,26 @@ const mongoose = require('mongoose');
 
 const measureSchema = new mongoose.Schema(
     {
-        _id:Number,
-        type: String,
-        creationDate:Date,
-        sensorID:Number,
-        value: Number,
+        _id: {
+            type : mongoose.Schema.Types.ObjectId,
+            required:  true
+        },
+        type:{
+            type: String,
+            required:true
+        },
+        creationDate:{
+            type: Date,
+            required: true
+        },
+        sensorID:{
+            type : mongoose.Schema.Types.ObjectId,
+            required:  true
+        },
+        value: {
+            type: Number,
+            required: true
+        }
     }
 );
 

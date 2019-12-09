@@ -2,13 +2,22 @@ const mongoose = require('mongoose');
 
 const sensorSchema = new mongoose.Schema(
     {
-        _id:Number,
-        creationDate: Date,
+        _id: {
+            type : mongoose.Schema.Types.ObjectId,
+            required:  true
+        },
+        creationDate:{
+            type: Date,
+            required: true,
+        },
         location:{
             type: String,
             required: true
         },
-        userID: Number,
+        userID:{
+            type : mongoose.Schema.Types.ObjectId,
+            required:  true
+        } 
     }
 );
 

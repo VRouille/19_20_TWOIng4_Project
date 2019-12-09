@@ -15,7 +15,7 @@ exports.create = (req, res) => {
     const user = new User({
         _id: req.body._id,
         localisation : req.body.localisation,
-        personInHouse : req.body.personInHouse,
+        personsInHouse : req.body.personsInHouse,
         houseSize: req.body.houseSize,
     });
 
@@ -87,7 +87,7 @@ exports.create = (req, res) => {
         {
             _id: req.body._id,
             localisation : req.body.localisation,
-            personInHouse : req.body.personInHouse,
+            personsInHouse : req.body.personsInHouse,
             houseSize: req.body.houseSize,
         },
         { new: true }
@@ -134,5 +134,3 @@ exports.create = (req, res) => {
             });
         });
     };
-
-
