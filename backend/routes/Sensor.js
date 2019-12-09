@@ -11,12 +11,12 @@ router.get('/', sensor.findAll);
 router.get('/:sensorId', sensor.findOne);
 
 /*Delete one sensor */
-router.get('/:sensorId', sensor.delete);
+router.delete('/:sensorId', sensor.delete);
 
 /*Update one sensor */
-router.get('/:sensorId', sensor.update);
+router.post('/:sensorId', sensor.update);
 
-/*Creat one sensor */
-router.get('/', sensor.create);
+/*Create one sensor */
+router.put('/', sensor.create);
 
 module.exports = router;

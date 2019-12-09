@@ -8,16 +8,16 @@ var user = require('../Controllers/User.controller');
 router.get('/', user.findAll);
 
 /*Get one user */
-router.get('/:userId', user.findOne);
+router.get('/userId', user.findOne);
 
 /*Delete one user */
-router.get('/:userId', user.delete);
+router.delete('/userId', user.delete);
 
 /*Update one user */
-router.get('/:userId', user.update);
+router.post('/userId', user.update);
 
 /*Create one user */
-router.get('/', user.create);
+router.put('/', user.create);
 
 module.exports = router;
 
