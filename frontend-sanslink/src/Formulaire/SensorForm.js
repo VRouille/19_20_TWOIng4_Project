@@ -38,7 +38,7 @@ export default function UserForm(){
             </Title>
             <div className={classes.mid}>
                 <FormControl component="fieldset">
-                    <FormLabel>House Size</FormLabel>
+                    <FormLabel>Location</FormLabel>
                     <RadioGroup aria-label="Location" name="location1" value={value} onChange={handleChange}>
                         <FormControlLabel value="Bathroom" control={<Radio />} label="Bathroom" />
                         <FormControlLabel value="Bedroom" control={<Radio />} label="Bedroom" />

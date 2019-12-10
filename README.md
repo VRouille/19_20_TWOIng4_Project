@@ -2,26 +2,29 @@ Diane LE BEAUDOUR
 Vincent ROUILLE
 ING4 OCRES GRP4
 
-# Projet de fin de semestre
+# Dossiers Présents
 
-A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
+- Le Mockup
+- Le Frontend
+- Le Backend
+- Le Frontend sans link
 
-<p align="center">
- <a href="https://github.com/clementAC/Instructions-Technologies-Web-OCRES-Ing4/blob/master/README.md">Règles pour le semestre</a>
-</p>
+## Le Mockup
 
-## Introduction
+Il comprend les images de ce à quoi doit "ressembler" notre Dashboard et le fichier XD.
 
-Ce repo git contient deux repertoires. L'un concerne la partie backend et l'autre la partie frontend.
+## Le Frontend sans-link
 
-Les deux repertoires ont été initialisé pour vous aider à démarrer le projet dans les meilleures conditions.
+Pour simplifier les choses nous avons dupliqué la partie frontend avant les modifications pour tenter de lier la partie front et la partie back. Afin de voir ce qu'aurait dû donner le Dashboard, nous avons fait un dossier reprenant le front sans les modifications pour le lier au back.
 
-Chacun de ces repertoires contient un README.md qui vous pouvez vous approprier. Nous vous encourageons à le faire en y mettant toute les informations nécessaires à la compréhension de votre projet
+Vous pouvez également voir le rendu grâce au lien ci-dessous :
+https://www.loom.com/share/96b248eed27b4493bb2792037990e5d7
 
-## Instructions
+## Le Frontend 
 
-Les instructions sont à retrouver dans le pdf mis à disposition sur campus.
+Des premiers élements pour tenter de lier le front avec le back (BarGraph.js et PolarChart.js)
+ --> utilisation de axios.
+ 
+## Le Backend
 
-**Le non respect de ces instructions entraînera des pertes de points alors prenez le temps de tout lire et de poser des questions si vous ne comprenez pas**
-
-Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelques heures avant le rendu est très proche de 0.
+Ce dossier comprend toutes les routes nécéssaires au "fonctionnement" du dashboard. 
