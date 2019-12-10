@@ -157,7 +157,7 @@ export default function MiniDrawer() {
           {['Dashboard', 'Formulaire'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon className={classes.ColorIcon}>
-                {index % 2 === 0 ? <DashboardRoundedIcon component={Link} to="/App"/> : <StorageRoundedIcon component={Link} to="/Formulaire" />}</ListItemIcon>
+                {index % 2 === 0 ? <DashboardRoundedIcon component={Link} to="/"/> : <StorageRoundedIcon component={Link} to="/Formulaire" />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}

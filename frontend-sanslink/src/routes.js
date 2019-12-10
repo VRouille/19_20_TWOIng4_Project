@@ -5,7 +5,7 @@ import App from "./App";
 
 export default ()=>(
 	<Switch>
-                <Route path="/App" exact component={App}/>
+                <Route path="/" exact component={App}/>
                 <Route path="/Formulaire" component={Formulaire}/>
 	</Switch>
 );
