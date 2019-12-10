@@ -87,11 +87,6 @@ const useStyles = makeStyles(theme => ({
     fontFamily :'montserrat',
     fontWeight : '600px',
   },
-  person:{
-    height:'40px',
-    width: '40px',
-    borderRadius: '50%',
-  },
   ColorIcon: {
     color:'#ffffff',
     paddingLeft: theme.spacing(1),
@@ -161,7 +156,8 @@ export default function MiniDrawer() {
         <List>
           {['Dashboard', 'Formulaire'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon className={classes.ColorIcon}>{index % 2 === 0 ? <DashboardRoundedIcon/> : <StorageRoundedIcon component={Link} to="/Formulaire" />}</ListItemIcon>
+              <ListItemIcon className={classes.ColorIcon}>
+                {index % 2 === 0 ? <DashboardRoundedIcon component={Link} to="/App"/> : <StorageRoundedIcon component={Link} to="/Formulaire" />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
