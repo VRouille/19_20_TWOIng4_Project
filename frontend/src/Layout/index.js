@@ -10,6 +10,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import DashboardRoundedIcon from '@material-ui/icons/DashboardRounded';
 import StorageRoundedIcon from '@material-ui/icons/StorageRounded';
+import {Link} from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -158,9 +159,10 @@ export default function MiniDrawer() {
           </IconButton>
         </div>
         <List>
-          {['Dashboard', 'Formulaire'].map((text, index) => (
+        {['Dashboard', 'Formulaire'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon className={classes.ColorIcon}>{index % 2 === 0 ? <DashboardRoundedIcon /> : <StorageRoundedIcon />}</ListItemIcon>
+              <ListItemIcon className={classes.ColorIcon}>
+                {index % 2 === 0 ? <DashboardRoundedIcon component={Link} to="/App"/> : <StorageRoundedIcon component={Link} to="/Formulaire" />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}

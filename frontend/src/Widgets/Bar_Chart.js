@@ -30,7 +30,7 @@ export default class Bar_Chart extends PureComponent {
 
     return (
       <React.Fragment>
-        <Title>Today</Title>
+        <Title>Persons In House</Title>
         <ResponsiveContainer>
           <BarChart
             data={values}

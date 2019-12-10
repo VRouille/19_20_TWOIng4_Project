@@ -3,9 +3,10 @@ import { ResponsiveContainer, PieChart, Pie, Sector } from 'recharts';
 import Title from './Title';
 
 const data = [
-  { name: 'Humidity', value: 400 },
-  { name: 'Temperature', value: 300 },
-  { name: 'Air Pollution', value: 300 },
+  { name: 'Bathroom', value: 18 },
+  { name: 'Bedroom', value: 43 },
+  { name: 'Entrance', value: 5 },
+  { name: 'Livingroom', value: 37 },
 ];
 
 const renderActiveShape = (props) => {
@@ -73,7 +74,7 @@ export default class Doughnut extends PureComponent {
     return (
         <div style={{ width: '100%', height: 230, margin : 0}}>
             <React.Fragment>
-              <Title>Today</Title>
+              <Title>Data By Location</Title>
               <ResponsiveContainer>
                   <PieChart>
                       <Pie
