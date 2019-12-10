@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import {
   makeStyles, useTheme, Drawer, AppBar, Toolbar,
@@ -160,7 +161,7 @@ export default function MiniDrawer() {
         <List>
           {['Dashboard', 'Formulaire'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon className={classes.ColorIcon}>{index % 2 === 0 ? <DashboardRoundedIcon /> : <StorageRoundedIcon />}</ListItemIcon>
+              <ListItemIcon className={classes.ColorIcon}>{index % 2 === 0 ? <DashboardRoundedIcon/> : <StorageRoundedIcon component={Link} to="/Formulaire" />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}

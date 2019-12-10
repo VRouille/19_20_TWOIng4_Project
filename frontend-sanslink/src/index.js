@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
+import Formulaire from './Formulaire';
 import Routes from './routes';
 import * as serviceWorker from './serviceWorker';
 
